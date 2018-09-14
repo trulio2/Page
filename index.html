@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,10 +70,10 @@
 				<h4 class="heading" style="text-align: center">Listar Restaurantes</h4>
 				<div class="row">
 					<div class="col-lg-6">
-						<input type="text" class="form-control" placeholder="Procurar por nomes" id="minput" onkeyup="filter()">
+						<input type="text" class="form-control" placeholder="Procurar por nomes" id="requested" onkeyup="filter()">
 					</div>
 					<div class="culinary-group col-lg-6">
-						<select class="culinary" id="cln" onclick="filter()">
+						<select class="culinary" id="requestedCulinary" onclick="filter()">
 							<option value="" selected="selected">Todas</option>
 							<option value="alema">Alemã</option>
 							<option value="brasileira">Brasileira</option>
@@ -119,7 +120,7 @@
 	</div>
 
 	<script src="js/main.js"></script>
-	<script>sortTable()</script>
+	<script>sortCards()</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>

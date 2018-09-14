@@ -1,25 +1,27 @@
+/* Filtra Resultados de acordo com o nome inserido e com o tipo de culinária selecionado */
 function filter() {
-  var input, inputcln, filter, filtercln, table, tr, td,td1, i;
-  input = document.getElementById("minput");
-  inputcln = document.getElementById("cln");
-  filtercln = inputcln.value.toUpperCase();
+  var input, inputCulinary, filter, filterCulinary, table, div, h3 ,p, i;
+  input = document.getElementById("requested");
+  inputCulinary = document.getElementById("requestedCulinary");
+  filterCulinary = inputCulinary.value.toUpperCase();
   filter = input.value.toUpperCase();
   table = document.getElementById("card1");
-  tr = table.getElementsByTagName("div");
-  for (i = 0; i < tr.length; i+=3) {
-    td = tr[i].getElementsByTagName("h3")[0];
-    td1=tr[i].getElementsByTagName("p")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1  && td1.innerHTML.toUpperCase().indexOf(filtercln) > -1) {
-        tr[i].style.display = "";
+  div = table.getElementsByTagName("div");
+  for (i = 0; i < div.length; i+=3) {
+    h3 = div[i].getElementsByTagName("h3")[0];
+    p = div[i].getElementsByTagName("p")[0];
+    if (h3) {
+      if (h3.innerHTML.toUpperCase().indexOf(filter) > -1  && p.innerHTML.toUpperCase().indexOf(filterCulinary) > -1) {
+        div[i].style.display = "";
       } else {
-        tr[i].style.display = "none";
+        div[i].style.display = "none";
       }
     }
   }
 }
 
-function sortTable() {
+/* Ordena Cards baseado nas Distancias */
+function sortCards() {
   var table, rows, switching, i,x, y, shouldSwitch;
   table = document.getElementById("card1");
   switching = true;
@@ -42,7 +44,8 @@ function sortTable() {
   }
 }
 
-function json2card(json,id) {
+/* Converte arquivo Json em Card */
+function toCard(json,id) {
   var cols = Object.keys(json[0]);
   var bodyRows = '';
 
@@ -61,4 +64,4 @@ function json2card(json,id) {
           bodyRows +
          '</div>';
 };
-document.getElementById('cards').innerHTML = json2card(data,'card1');
+document.getElementById('cards').innerHTML = toCard(data,'card1');
