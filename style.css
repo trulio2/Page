@@ -32,7 +32,7 @@ html,body{
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
-#minput {
+#requested {
   background-image: url('./img/searchicon.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -114,7 +114,6 @@ h3.heading {
   padding-top: 2rem;
 }
 
-/*--- iOS Landing Page Fix --*/
 .landing {
   position: relative;
   width: 100%;
