@@ -1,0 +1,148 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins',sans-serif;
+  color: #222;
+}
+#table1 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#table1 thead{
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#table1 td{
+  text-align: center;
+  vertical-align: middle;
+}
+.card {
+  border: none;
+  padding-bottom: 1rem;
+}
+
+#imgs {
+  max-width: 10rem;
+  max-height: 10rem;
+  align-self: center;
+}
+.result {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+#minput {
+  background-image: url('./img/searchicon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+.input-group {
+  margin-top: 1rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.navbar-brand img {
+	height: 2rem;
+}
+.row {
+}
+h3.heading {
+	text-align: center;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	margin-bottom: 1.9rem;
+}
+.padding {
+		padding: 2rem 0;
+}
+.culinary-group {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 20px 12px 40px;
+  margin-top: 1rem;
+}
+.culinary {
+  border: 1px solid #563d7c;
+  }
+.name,.culinary,.btn {
+    border-width: medium;
+  	border-radius: 0;
+  	padding: .5rem 1.1rem;
+    background-color: #563d7c;
+    border: 1px solid #563d7c;
+    text-shadow: 1px 1px 15px #000;
+    color: white;
+  }
+
+.navbar {
+	background-color: #505962;
+}
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+}
+.caption h3 {
+	color: white;
+	font-size: 2.4rem;
+	padding-bottom: 2rem;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.footer {
+	text-align: center;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+.query{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+	background-image: url('./img/background.jpg');
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}

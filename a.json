@@ -1,0 +1,80 @@
+var data= [
+	{
+		Capa: './img/akemi-logo.png',
+		Nome: 'Akemi',
+		Culinaria: 'Japonesa',
+		Avaliacao: '5',
+		Distancia: '6'
+	},
+	{
+		Capa: './img/alessa-logo.png',
+		Nome: 'Alessa',
+		Culinaria: 'Gelateria',
+		Avaliacao: '5',
+		Distancia: '20'
+	},
+	{
+		Capa: './img/68-logo.jpg',
+		Nome: '68LaPizzeria',
+		Culinaria: 'Pizzaria',
+		Avaliacao: '5',
+		Distancia: '10'
+	},
+	{
+		Capa: './img/benvindo-logo.png',
+		Nome: 'Benvindo',
+		Culinaria: 'Contemporanea',
+		Avaliacao: '5',
+		Distancia: '50'
+	},
+	{
+		Capa: './img/gluton-logo.png',
+		Nome: 'Gluton',
+		Culinaria: 'Internacional',
+		Avaliacao: '4',
+		Distancia: '2'
+	},
+	{
+		Capa: './img/gomide-logo.png',
+		Nome: 'Gomide',
+		Culinaria: 'Francesa',
+		Avaliacao: '5',
+		Distancia: '15'
+	},
+	{
+		Capa: './img/guaja-logo.png',
+		Nome: 'Guaja',
+		Culinaria: 'Variada',
+		Avaliacao: '5',
+		Distancia: '7'
+	},
+	{
+		Capa: './img/haus-logo.png',
+		Nome: 'Haus',
+		Culinaria: 'Alema',
+		Avaliacao: '5',
+		Distancia: '30'
+	},
+	{
+		Capa: './img/campagne-logo.png',
+		Nome: 'Campagne',
+		Culinaria: 'Brasileira',
+		Avaliacao: '4',
+		Distancia: '12'
+	},
+	{
+		Capa: './img/paladino-logo.png',
+		Nome: 'Paladino',
+		Culinaria: 'Brasileira',
+		Avaliacao: '5',
+		Distancia: '43'
+	},
+	{
+		Capa: './img/kanpai-logo.png',
+		Nome: 'Kanpai',
+		Culinaria: 'Japonesa',
+		Avaliacao: '5',
+		Distancia: '10'
+	},
+
+]

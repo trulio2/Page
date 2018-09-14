@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="a.json"></script>
+</head>
+<body data-spy="scroll" data-target="#memu">
+
+	<div id="home">
+
+		<nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#info">Informações</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#search">Consulta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contato</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+		<div class="caption center-block text-center">
+			<h3>Desafio Duo Gourmet</h3>
+			<a class="btn btn-outline-light" href="#search">Começar</a>
+		</div>
+
+	</div>
+
+	<div id="info">
+
+		<div class="jumbotron">
+			<h3 class="heading">Informações</h3>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Aplicação para listar Restaurantes utilizando filtros de atributos</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="search">
+
+		<div class="container-fluid query">
+			<div class="jumbotron">
+				<h4 class="heading" style="text-align: center">Listar Restaurantes</h4>
+				<div class="row">
+					<div class="col-lg-6">
+						<input type="text" class="form-control" placeholder="Procurar por nomes" id="minput" onkeyup="filter()">
+					</div>
+					<div class="culinary-group col-lg-6">
+						<select class="culinary" id="cln" onclick="filter()">
+							<option value="" selected="selected">Todas</option>
+							<option value="alema">Alemã</option>
+							<option value="brasileira">Brasileira</option>
+							<option value="contemporanea">Contemporânea</option>
+							<option value="francesa">Francesa</option>
+							<option value="gelateria">Gelateria</option>
+							<option value="internacional">Internacional</option>
+							<option value="aponesa">Japonesa</option>
+							<option value="pizzaria">Pizzaria</option>
+							<option value="variada">Variada</option>
+						</select>
+						<strong>Culinária</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="cards"></div>
+		</div>
+
+	</div>
+
+
+	<div id="contact">
+
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>Tulio Santos</h5>
+				</div>
+				<div class="col-md-4">
+					<h5>E-mail</h5>
+					<hr class="light">
+					<p>tulio-santos@hotmail.com</p>
+				</div>
+				<div class="col-md-4">
+					<h5>Telefone</h5>
+					<hr class="light">
+					<p>(31) 99292-2542</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/main.js"></script>
+	<script>sortTable()</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
