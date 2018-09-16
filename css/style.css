@@ -4,20 +4,6 @@ html,body{
   font-family: 'Poppins',sans-serif;
   color: #222;
 }
-#table1 {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-#table1 thead{
-  background-color: #f1f1f1;
-  text-align: center;
-}
-#table1 td{
-  text-align: center;
-  vertical-align: middle;
-}
 .card {
   border: none;
   padding-bottom: 1rem;
@@ -55,16 +41,10 @@ hr.light {
 .navbar-brand img {
 	height: 2rem;
 }
-.row {
-}
 h3.heading {
 	text-align: center;
 	font-size: 1.9rem;
-	text-transform: uppercase;
 	margin-bottom: 1.9rem;
-}
-.padding {
-		padding: 2rem 0;
 }
 .culinary-group {
   width: 100%;
