@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Desafio</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript" src="./data/data.json"></script>
 </head>
 <body data-spy="scroll" data-target="#memu">
 
@@ -70,20 +70,20 @@
 				<h4 class="heading" style="text-align: center">Listar Restaurantes</h4>
 				<div class="row">
 					<div class="col-lg-6">
-						<input type="text" class="form-control" placeholder="Procurar por nomes" id="requested" onkeyup="filter()">
+						<input type="text" class="form-control" placeholder="Procurar por nomes" id="requestedName" onkeyup="filter()">
 					</div>
 					<div class="culinary-group col-lg-6">
 						<select class="culinary" id="requestedCulinary" onclick="filter()">
 							<option value="" selected="selected">Todas</option>
-							<option value="alemã">Alemã</option>
-							<option value="brasileira">Brasileira</option>
-							<option value="contemporânea">Contemporânea</option>
-							<option value="francesa">Francesa</option>
-							<option value="gelateria">Gelateria</option>
-							<option value="internacional">Internacional</option>
-							<option value="aponesa">Japonesa</option>
-							<option value="pizzaria">Pizzaria</option>
-							<option value="variada">Variada</option>
+							<option value="Alemã">Alemã</option>
+							<option value="Brasileira">Brasileira</option>
+							<option value="Contemporânea">Contemporânea</option>
+							<option value="Francesa">Francesa</option>
+							<option value="Gelateria">Gelateria</option>
+							<option value="Internacional">Internacional</option>
+							<option value="Japonesa">Japonesa</option>
+							<option value="Pizzaria">Pizzaria</option>
+							<option value="Variada">Variada</option>
 						</select>
 						<strong>Culinária</strong>
 					</div>
@@ -119,7 +119,7 @@
 
 	</div>
 
-	<script src="js/main.js"></script>
+	<script src="./js/main.js"></script>
 	<script>sortCards()</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

@@ -1,11 +1,11 @@
-/* Filtra Resultados de acordo com o nome inserido e com o tipo de culinária selecionado */
+/* Filtra resultados de acordo com o nome inserido e culinária selecionada */
 function filter() {
   var input, inputCulinary, filter, filterCulinary, table, div, h3 ,p, i;
-  input = document.getElementById("requested");
+  input = document.getElementById("requestedName");
   inputCulinary = document.getElementById("requestedCulinary");
   filterCulinary = inputCulinary.value.toUpperCase();
   filter = input.value.toUpperCase();
-  table = document.getElementById("card1");
+  table = document.getElementById("cardList");
   div = table.getElementsByTagName("div");
   for (i = 0; i < div.length; i+=3) {
     h3 = div[i].getElementsByTagName("h3")[0];
@@ -20,10 +20,10 @@ function filter() {
   }
 }
 
-/* Ordena Cards baseado nas Distancias */
+/* Ordena Cards baseado na Distância */
 function sortCards() {
-  var table, rows, switching, i,x, y, shouldSwitch;
-  table = document.getElementById("card1");
+  var table, rows, switching, x, y,i, shouldSwitch;
+  table = document.getElementById("cardList");
   switching = true;
   while (switching) {
     switching = false;
@@ -44,24 +44,24 @@ function sortCards() {
   }
 }
 
-/* Converte arquivo Json em Card */
-function toCard(json,id) {
-  var cols = Object.keys(json[0]);
-  var bodyRows = '';
+/* Converte arquivo Json em Cards */
+function toCard(json, id) {
+  var rows = '';
 
   json.map(function(row) {
-    bodyRows += '<div class="col-md-6 col-lg-3" id="each">';
-    bodyRows += '<div class="card">';
-    bodyRows += '<img src="'+row["Capa"]+'" class="card-img-top img-fuild" id="imgs" />';
-    bodyRows += '<div class="card-block">';
-    bodyRows += '<h3 class="card-title" style="text-align: center">'+row["Nome"]+'</h3>';
-    bodyRows += '<p style="text-align: center">Culinária '+row["Culinaria"]+'</p>';
-    bodyRows += '<p style="text-align: center">Avaliação '+row["Avaliacao"]+'*</p>';
-    bodyRows += '<p style="text-align: center">'+row["Distancia"]+'km</p>';
-    bodyRows += '</div></div></div>';
+    rows += '<div class="col-md-6 col-lg-3">';
+    rows += '<div class="card">';
+    rows += '<img src="'+row["Capa"]+'" class="card-img-top img-fuild" id="imgs" />';
+    rows += '<div class="card-block">';
+    rows += '<h3 class="card-title" style="text-align: center">'+row["Nome"]+'</h3>';
+    rows += '<p style="text-align: center">Culinária '+row["Culinaria"]+'</p>';
+    rows += '<p style="text-align: center">Avaliação '+row["Avaliacao"]+'*</p>';
+    rows += '<p style="text-align: center">'+row["Distancia"]+'km</p>';
+    rows += '</div></div></div>';
   });
+  
   return '<div class="row" id="'+id+'">'+
-          bodyRows +
+          rows +
          '</div>';
 };
-document.getElementById('cards').innerHTML = toCard(data,'card1');
+document.getElementById('cards').innerHTML = toCard(data,'cardList');

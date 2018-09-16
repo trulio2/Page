@@ -32,8 +32,8 @@ html,body{
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
-#requested {
-  background-image: url('./img/searchicon.png');
+#requestedName {
+  background-image: url('../img/searchicon.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -132,7 +132,7 @@ h3.heading {
 }
 
 .home-inner {
-	background-image: url('./img/background.jpg');
+	background-image: url('../img/background.jpg');
   position: fixed;
   display: table;
   top: 0;
