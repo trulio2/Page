@@ -10,9 +10,10 @@ html,body{
 }
 
 #imgs {
-  max-width: 10rem;
-  max-height: 10rem;
-  align-self: center;
+  max-height: 200px;
+  max-width: 300px;
+  width: auto;
+  height: auto;
 }
 .result {
   padding-bottom: 2rem;
